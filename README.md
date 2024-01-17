@@ -93,7 +93,7 @@ async function translateAndUpdateElements(targetLanguage) {
 // Automatically translate when the DOM content is loaded
 document.addEventListener("DOMContentLoaded", async () => {
   const targetLanguage = "Mandarin Chinese"; // Replace with the target language code
-  await translateAndUpdateElements(targetLanguage);
+  await translateAndUpdateElements("English",targetLanguage);
 });
 ```
 
@@ -104,7 +104,7 @@ import { autoTranslate } from "https://cdn.jsdelivr.net/gh/Mr-vero/AutoTranslate
 // Automatically translate when the DOM content is loaded
 document.addEventListener("DOMContentLoaded", async () => {
   const targetLanguage = "Thai"; // Replace with the target language code
-  await autoTranslate(targetLanguage);
+  await autoTranslate("English",targetLanguage);
 });
 ```
 
