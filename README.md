@@ -33,11 +33,11 @@ Install the `js-auto-translate` package using npm:
 npm i js-auto-translate
 ```
 
-Then, import the `translateText` function from the module in your JavaScript file:
+Then, import the `translateText` or `autoTranslate` function from the module in your JavaScript file:
 
 ```javascript
 // Import the translation function
-import { translateText } from "js-auto-translate";
+import { translateText, autoTranslate } from "js-auto-translate";
 
 // Rest of your code...
 ```
@@ -56,6 +56,7 @@ Feel free to reach out if you have any questions or encounter issues during the 
 
 ## Example Usage
 
+Customize class using `translateText`
 ```javascript
 // Import the translation function
 import { translateText } from "./autoTranslate.js";
@@ -93,6 +94,17 @@ async function translateAndUpdateElements(targetLanguage) {
 document.addEventListener("DOMContentLoaded", async () => {
   const targetLanguage = "Mandarin Chinese"; // Replace with the target language code
   await translateAndUpdateElements(targetLanguage);
+});
+```
+
+Easy installation with `autoTranslate`
+```javascript
+import { autoTranslate } from "https://cdn.jsdelivr.net/gh/Mr-vero/AutoTranslate@v.1.0.1/dist/autoTranslate.js";
+
+// Automatically translate when the DOM content is loaded
+document.addEventListener("DOMContentLoaded", async () => {
+  const targetLanguage = "Thai"; // Replace with the target language code
+  await autoTranslate(targetLanguage);
 });
 ```
 
