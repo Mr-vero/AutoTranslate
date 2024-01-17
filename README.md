@@ -1,6 +1,6 @@
 # AutoTranslate - Seamless Website Translation
 
-Welcome to AutoTranslate, a versatile JavaScript module designed for seamless and high-quality auto-translation of entire websites. Our module seamlessly integrates with SeamlessM4T, a unified translation model that facilitates effortless communication across diverse linguistic communities. Say goodbye to the complexities of setup and external localization files – AutoTranslate makes website translation a breeze.
+Welcome to AutoTranslate, a versatile JavaScript module designed for seamless and high-quality auto-translation of entire websites. This module seamlessly integrates with SeamlessM4T, a unified translation model that facilitates effortless communication across diverse linguistic communities. Say goodbye to the complexities of setup and external localization files – AutoTranslate makes website translation a breeze.
 
 ## Features
 
@@ -162,7 +162,7 @@ The auto-translation module currently supports the following languages:
 
 ## Contribution
 
-Contributions to the project are welcome! If you'd like to contribute, follow the guidelines in the README. We appreciate your help in enhancing the functionality and usability of the auto-translation module. If you have ideas or improvements to contribute, please follow the contribution guidelines mentioned in the README file.
+Contributions to the project are welcome! If you'd like to contribute, follow the guidelines in the README. I appreciate your help in enhancing the functionality and usability of the auto-translation module. If you have ideas or improvements to contribute, please follow the contribution guidelines mentioned in the README file.
 
 **Note:** The speech function has been removed as per the user's request to streamline the translation process. If you have any questions or concerns, feel free to reach out through the repository's issue tracker.
 
