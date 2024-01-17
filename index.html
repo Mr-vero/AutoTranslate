@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+  </head>
+  <body>
+    <h3 class="autotranslate">hungry angry marry</h3>
+    <p class="autotranslate">I'm, working on this everyday</p>
+  </body>
+
+  <!-- <script type="module" src="autoTranslate.js"></script> -->
+  <script type="module">
+    // Import the translation function
+    import { translateText } from "./autoTranslate.js";
+
+    // Function to translate and update text content of elements with a specific class
+    async function translateAndUpdateElements(targetLanguage) {
+      // Find all elements with the "autotranslate" class
+      const elementsToTranslate = document.querySelectorAll(".autotranslate");
+
+      // Translate and update text content of each element
+      for (const element of elementsToTranslate) {
+        const originalText = element.innerText.trim();
+
+        // Skip empty elements
+        if (!originalText) {
+          continue;
+        }
+
+        try {
+          // Translate the text
+          const translatedText = await translateText(
+            originalText,
+            targetLanguage,
+          );
+
+          console.log(translatedText);
+
+          // Update the text content of the element with the translated text
+          element.innerText = translatedText;
+        } catch (error) {
+          console.error("Translation error:", error);
+        }
+      }
+    }
+
+    // Automatically translate when the DOM content is loaded
+    document.addEventListener("DOMContentLoaded", async () => {
+      const targetLanguage = "Mandarin Chinese"; // Replace with the target language code
+      await translateAndUpdateElements(targetLanguage);
+    });
+  </script>
+</html>
