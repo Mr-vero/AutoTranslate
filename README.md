@@ -12,6 +12,44 @@ The `AutoTranslate` is a versatile JavaScript module designed for seamless and h
 
 - **Dynamic Translation Tasks:** The `translateText` function leverages SeamlessM4T to perform dynamic text translation.
 
+**CDN and NPM Usage:**
+
+To use the `AutoTranslate` module via CDN or npm, follow the instructions below:
+
+### CDN Usage:
+
+Include the following script tag in your HTML file to use the `AutoTranslate` module directly from the CDN:
+
+```html
+<!-- Replace 'v.1.0.0' with the desired version -->
+<script src="https://cdn.jsdelivr.net/gh/Mr-vero/AutoTranslate@v.1.0.0/dist/autoTranslate.js"></script>
+```
+
+Now, you can proceed with the module initialization and usage as described in the README.
+
+### NPM Usage:
+
+Install the `js-auto-translate` package using npm:
+
+```bash
+npm i js-auto-translate
+```
+
+Then, import the `translateText` function from the module in your JavaScript file:
+
+```javascript
+// Import the translation function
+import { translateText } from "js-auto-translate";
+
+// Rest of your code...
+```
+
+Now, you can use the `translateText` function and other features of the `AutoTranslate` module as described in the README.
+
+Make sure to adjust the version in the CDN link or npm package version according to your project's requirements.
+
+Feel free to reach out if you have any questions or encounter issues during the integration process.
+
 **Usage:**
 
 1. Import the module and initialize the translation cache using the `initialize` method.
