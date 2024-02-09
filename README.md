@@ -19,8 +19,8 @@ Welcome to AutoTranslate, a versatile JavaScript module designed for seamless an
 Include the following script tag in your HTML file to use the AutoTranslate module directly from the CDN:
 
 ```html
-<!-- Replace 'v.1.0.0' with the desired version -->
-<script src="https://cdn.jsdelivr.net/gh/Mr-vero/AutoTranslate@v.1.0.0/dist/autoTranslate.js"></script>
+<!-- Replace 'v.1.0.1' with the desired version -->
+<script src="https://cdn.jsdelivr.net/gh/Mr-vero/AutoTranslate@v.1.0.1/dist/autoTranslate.js"></script>
 ```
 
 Now, proceed with the module initialization and usage as described in the README.
@@ -37,12 +37,12 @@ Then, import the `translateText` or `autoTranslate` function from the module in 
 
 ```javascript
 // Import the translation function
-import { translateText, autoTranslate } from "js-auto-translate";
+import { translateText, autoTranslate, getLanguages } from "autotranslate";
 
 // Rest of your code...
 ```
 
-Now, use the `translateText` function and other features of the AutoTranslate module as described in the README.
+Now, use the `translateText` function, `autoTranslate` function, and other features of the AutoTranslate module as described in the README.
 
 Adjust the version in the CDN link or npm package version according to your project's requirements.
 
@@ -93,27 +93,24 @@ async function translateAndUpdateElements(targetLanguage) {
 // Automatically translate when the DOM content is loaded
 document.addEventListener("DOMContentLoaded", async () => {
   const targetLanguage = "Mandarin Chinese"; // Replace with the target language code
-  await translateAndUpdateElements("English",targetLanguage);
+  await translateAndUpdateElements(targetLanguage);
 });
 ```
 
 Easy installation with `autoTranslate`
 ```javascript
-import { autoTranslate } from "https://cdn.jsdelivr.net/gh/Mr-vero/AutoTranslate@v.1.0.1/dist/autoTranslate.js";
+import { autoTranslate } from "https://cdn.jsdelivr.net/gh/Mr-vero/AutoTranslate@v.1.0.3/dist/autoTranslate.js";
 
 // Automatically translate when the DOM content is loaded
 document.addEventListener("DOMContentLoaded", async () => {
   const targetLanguage = "Thai"; // Replace with the target language code
-  await autoTranslate("English",targetLanguage);
+  await autoTranslate("English", targetLanguage);
 });
 ```
 
 ## Supported Languages
 
-The auto-translation module currently supports a variety of languages, including but not limited to:
-
-
-The auto-translation module currently supports the following languages:
+The auto-translation module now supports a variety of languages, including but not limited to:
 
 - Bengali
 - Catalan
@@ -160,9 +157,18 @@ The auto-translation module currently supports the following languages:
 
 3. **Bug Fixes:** Address any reported bugs or issues to maintain a stable and reliable auto-translation experience.
 
+## New Features
+
+- **Faster Translation:** Enjoy faster translation capabilities, ensuring a smoother user experience.
+
+- **Instant Recovery:** Benefit from instant recovery mechanisms, minimizing downtime and enhancing reliability.
+
+- **Get Supported Languages:** Use the `getLanguages` function to retrieve a list of all supported languages for more efficient language selection in your applications.
+
+- **It understand your page:** so you don't need to add 'autotranslate' class anymore.
+
 ## Contribution
 
 Contributions to the project are welcome! If you'd like to contribute, follow the guidelines in the README. I appreciate your help in enhancing the functionality and usability of the auto-translation module. If you have ideas or improvements to contribute, please follow the contribution guidelines mentioned in the README file.
 
 **Note:** The speech function has been removed as per the user's request to streamline the translation process. If you have any questions or concerns, feel free to reach out through the repository's issue tracker.
-
